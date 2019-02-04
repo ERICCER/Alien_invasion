@@ -1,10 +1,10 @@
 import sys
 import os
 import pygame
-from pygame.locals import *
 ####use module####
 from setting import Setting
 from ship import Ship
+import game_functions as gf
 ####use module####
 def run_game():
     pygame.init()
@@ -19,6 +19,9 @@ def run_game():
 
     while True:
 
+            gf.check_events()
+            gf.update_screen(ai_setting,screen,ship)
+"""
         for event in pygame.event.get():
 
             if event.type == pygame.QUIT:
@@ -28,5 +31,5 @@ def run_game():
         screen.fill(ai_setting.bg_color)
         ship.blitme()
         pygame.display.flip()
-
-run_game() 
+"""
+run_game()
