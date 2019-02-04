@@ -30,7 +30,7 @@ def run_game():
                 sys.exit()
 
         screen.blit(bg,(0,0))
-
+        ship.blitme()
         pygame.display.flip()
 
 run_game() 
