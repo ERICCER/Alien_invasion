@@ -15,10 +15,6 @@ def run_game():
 
     pygame.display.set_caption("Alien")
 
-    bg_c = ('C:/Users/Eric/Desktop/alien/image/bg.png')
-
-    bg = pygame.image.load(bg_c).convert()
-
     ship = Ship(screen)
 
     while True:
@@ -29,7 +25,7 @@ def run_game():
 
                 sys.exit()
 
-        screen.blit(bg,(0,0))
+        screen.fill(ai_setting.bg_color)
         ship.blitme()
         pygame.display.flip()
 
