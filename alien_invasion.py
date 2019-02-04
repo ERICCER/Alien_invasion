@@ -2,8 +2,10 @@ import sys
 import os
 import pygame
 from pygame.locals import *
+####use module####
 from setting import Setting
-
+from ship import Ship
+####use module####
 def run_game():
     pygame.init()
 
@@ -16,6 +18,8 @@ def run_game():
     bg_c = ('C:/Users/Eric/Desktop/alien/image/bg.png')
 
     bg = pygame.image.load(bg_c).convert()
+
+    ship = Ship(screen)
 
     while True:
 
