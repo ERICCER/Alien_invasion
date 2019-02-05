@@ -1,5 +1,5 @@
-import sys
-import os
+#import sys
+#import os
 import pygame
 ####use module####
 from setting import Setting
